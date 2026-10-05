@@ -15,11 +15,11 @@ ENV PATH="/root/.deno/bin:${PATH}"
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --no-cache-dir -U yt-dlp
 
-COPY main.py .
+COPY backend/main.py .
 
 RUN mkdir -p /app/work /app/outputs
 
