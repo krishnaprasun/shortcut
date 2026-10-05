@@ -1,0 +1,29 @@
+# Environment & secrets
+.env
+*.env
+cookies.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+
+# Working directories (video downloads & outputs)
+work/
+outputs/
+
+# Ratings (user-specific data)
+ratings.json
+
+# macOS
+.DS_Store
+
+# Temp files
+*.avi
+*.webm
+*.tmp

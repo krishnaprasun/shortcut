@@ -1,0 +1,8 @@
+work/
+outputs/
+__pycache__/
+*.pyc
+.git/
+cookies.txt
+.env
+ratings.json

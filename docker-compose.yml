@@ -1,0 +1,14 @@
+services:
+  shortcut-backend:
+    build: .
+    container_name: shortcut-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - ./work:/app/work
+      - ./outputs:/app/outputs
+      - ./ratings.json:/app/ratings.json
+      - ./cookies.txt:/app/cookies.txt
